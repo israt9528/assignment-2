@@ -1,0 +1,69 @@
+:root {
+    --dark-1: #000;
+    --dark-2: #252432;
+    --dark-3: rgba(0,0,0,50%);
+    --dark-4: #111;
+    --dark-5: #8987A1;
+    --primary-bright: #E95A08;
+    --secondary-bright: #fff;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/* navigation bar styles */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left img {
+    width: 100%;
+}
+.nav-right {
+    width: 415px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Inter;
+    font-size: 1.6rem;
+}
+.nav-right > div {
+    color: var(--dark-2);
+    font-weight: 700;
+
+}
+.nav-right .nav-item {
+    color: var(--dark-5);
+    font-weight: 400;
+}
+.nav-right div:last-child {
+    color: var(--dark-1);
+}
+.nav-right i {
+    margin-right: 10px;
+}
+
+
+
+/* responsive design */
+
+@media screen and (max-width: 550px) {
+    .container {
+        max-width: 100vw;
+        margin: 0 10px;
+    }
+    .items {
+        visibility: hidden;
+    }
+    .nav-left {
+        width: 100px;
+    }
+   
+}
