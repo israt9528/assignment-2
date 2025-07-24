@@ -1,16 +1,21 @@
 :root {
     --dark-1: #000;
     --dark-2: #252432;
-    --dark-3: rgba(0,0,0,50%);
+    --dark-3: rgba(0,0,0,0.5);
     --dark-4: #111;
     --dark-5: #8987A1;
     --primary-bright: #E95A08;
     --secondary-bright: #fff;
 
 }
-
+*{
+    box-sizing: border-box;
+}
 html {
     font-size: 62.5%;
+}
+body {
+    margin: 0;
 }
 .container {
     max-width: 1140px;
@@ -50,6 +55,41 @@ html {
     margin-right: 10px;
 }
 
+/* banner section styles */
+
+.banner {
+    display: flex;
+    margin-top: 12rem;
+    align-items: flex-end;
+}
+/* .banner > * {
+    flex: 1;
+} */
+.banner-head {
+    color: var(--dark-1);
+    font-family: "Noto Serif";
+    font-size: 6.5rem;
+    font-weight: 700;
+    margin: 0 0 13px;
+}
+.banner-head span {
+    color: var(--primary-bright);
+}
+.banner-left p {
+    font-family: Inter;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--dark-3);
+    margin: 0;
+}
+.banner-right img {
+    display: block;
+    /* width: 100%; */
+}
+
+.header {
+    margin-top: 30px;
+}
 
 
 /* responsive design */
@@ -57,7 +97,10 @@ html {
 @media screen and (max-width: 550px) {
     .container {
         max-width: 100vw;
-        margin: 0 10px;
+    }
+    /* navigation bar styles */
+    .navigation {
+        margin: 0 16px;
     }
     .items {
         visibility: hidden;
@@ -65,5 +108,26 @@ html {
     .nav-left {
         width: 100px;
     }
-   
+   /* banner styles */
+   .banner {
+    flex-direction: column-reverse;
+    gap: 28px;
+   }
+   .banner-left {
+    margin: 0 auto;
+    width: 360px;
+   }
+   .banner-head {
+    font-size: 2.4rem;
+   }
+   .banner-left p {
+    font-size: 1.4rem;
+   }
+   .banner-right img {
+    width: 100%;
+   }
+   .header {
+    margin-top: 12px;
+}
+
 }
