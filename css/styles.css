@@ -117,7 +117,7 @@ body {
     font-weight: 400;
     color: var(--dark-3);
     margin: 16px auto 0;
-    max-width: 75%;
+    max-width: 80%;
 }
 .plants-card {
     display: grid;
@@ -262,6 +262,89 @@ ul {
     grid-column: 2;
 }
 
+/* join section styles */
+
+.join {
+    height: 530px;
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 120px;
+}
+.join h3 {
+    color: var(--secondary-bright);
+    font-family: "Noto Serif";
+    font-size: 5rem;
+    font-weight: 700;
+    padding: 200px 0 23px;
+    margin: 0;
+}
+.input {
+    border: 0;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+.input .btn {
+    width: 186px;
+}
+.input input:first-child {
+    flex-grow: 1;
+    outline: 0;
+    border: 0;
+    padding: 15.5px 20px;
+    
+}
+::placeholder {
+    color: var(--dark-3);
+    font-family: "Inter";
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+/* footer styles */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 50px auto;
+}
+
+.footer-body p {
+    margin: 0;
+    max-width: 100%;
+    margin-top: 16px;
+}
+.footer-body {
+    width: 30%;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    
+}
+.item a {
+    color: var(--dark-5);
+    font-family: "Inter";
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    
+}
+.icon-img {
+    margin-top: 10px;
+}
+
 
 /* responsive design */
 
@@ -282,10 +365,11 @@ ul {
    /* banner styles */
    .banner {
         flex-direction: column-reverse;
+        align-items: flex-start;
         gap: 28px;
    }
    .banner-left {
-        margin: 0 auto;
+    margin: 0 16px;
         width: 360px;
    }
    .banner-head {
@@ -353,6 +437,32 @@ ul {
         margin: 68px 0 19px;
     }
     .deals-card .card-3 a {
+        font-size: 1.6rem;
+    }
+     
+    /* join section styles */
+    .join {
+        margin-top: 40px;
+    }
+    .join h3 {
+        font-size: 2rem;
+    }
+    .input {
+        width: 70%;
+    }
+
+    /* footer styles */
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        margin: 50px 16px;
+    }
+    .footer-body {
+        width: 80%;
+    }
+    .footer-body p {
         font-size: 1.6rem;
     }
 }
